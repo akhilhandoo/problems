@@ -6,6 +6,15 @@ import java.util.Queue;
 
 public class ContinuousMedian {
 
+    public static void main(String[] args) {
+        int[] input = new int[]{5, 10, 100, 200, 6, 13, 14, 50, 51, 52, 1000, 10000, 10001, 10002, 10003, 10004, 75, 80};
+        ContinuousMedianHandler medianHandler = new ContinuousMedianHandler();
+        for (int x: input) {
+            medianHandler.insert(x);
+        }
+        System.out.println(medianHandler.getMedian());
+    }
+
     static class ContinuousMedianHandler {
         double median = 0;
         Queue<Integer> topHalf = new PriorityQueue<>(Collections.reverseOrder());
@@ -47,6 +56,9 @@ public class ContinuousMedian {
                     } else if (number > bottomHalf.peek()) {
                         bottomHalf.add(number);
                         median = bottomHalf.peek();
+                    } else {
+                        topHalf.add(number);
+                        median = number;
                     }
                 }
             }

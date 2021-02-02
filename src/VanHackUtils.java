@@ -1,4 +1,4 @@
-import org.apache.commons.codec.digest.DigestUtils;
+
 
 import javax.script.ScriptEngine;
 import javax.script.ScriptEngineManager;
@@ -73,7 +73,7 @@ public class VanHackUtils {
 //    List<Integer> answers = kthPerson(busSize, patience, queries);
 //    System.out.println(answers);
 
-    System.out.println(DigestUtils.md5Hex("roshan                                                                          "));
+//    System.out.println(DigestUtils.md5Hex("roshan                                                                          "));
     //System.out.println(DigestUtils.md5Hex("ashvin"));
   }
 
