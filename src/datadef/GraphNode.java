@@ -1,7 +1,5 @@
 package datadef;
 
-import jdk.nashorn.internal.objects.NativeString;
-
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;

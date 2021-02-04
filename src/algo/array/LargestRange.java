@@ -1,7 +1,5 @@
 package algo.array;
 
-import org.omg.PortableInterceptor.INACTIVE;
-
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
